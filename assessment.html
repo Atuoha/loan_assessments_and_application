@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link
+      href="font-awesome/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="img/back.png" rel="icon" type="image" />
+    <title>Loan Access Checker | Assessment</title>
+  </head>
+  <body id="assessment-body">
+    <div class="container">
+      <div class="question-board">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/back.png" width="300" />
+          </div>
+
+          <!-- QUESTIONS -->
+          <div class="col-md-9 mt-5 assess-1 text-center lead">
+            <h1><b>Assessment 1 - Purpose</b></h1>
+            <p>
+              To which purpose does applying for this loan lie on? We give out
+              loan with reasons considering how legit enough your purpose for
+              applying for this loan is
+            </p>
+          </div>
+
+          <div class="col-md-9 mt-5 assess-2 text-center lead">
+            <h1><b>Assessment 2 - Credit Profile</b></h1>
+            <p>
+              How is your credit profile? Considering your credit profile is
+              another key factor we look into while considering the interest
+              rate
+            </p>
+          </div>
+
+          <div class="col-md-9 mt-5 assess-3 text-center lead">
+            <h1><b>Assessment 3 - Salary Range</b></h1>
+            <p>
+              What is your salary range? In order to judge your ability to pay
+              back, we are pleased to ask your salary range so as to know your
+              stability
+            </p>
+          </div>
+
+          <div class="col-md-9 mt-5 assess-4 text-center lead">
+            <h1><b>Assessment 4 - Collateral</b></h1>
+            <p>
+              Can you provide a Collateral? Collateral is any security you
+              submit to the leader - a house, car, jewelry, etc. In case you
+              fail to pay your debit, they are allowed to keep or sell that
+              collateral for reimbursement
+            </p>
+          </div>
+
+          <div class="col-md-9 mt-5 assess-5 text-center lead">
+            <h1><b>Assessment 5 - Credentials</b></h1>
+            <p>
+              What credentials do you own? Credentials are higher stands that
+              aid us identifying you amongst the crowd and with more you could
+              stand a better chance to get exactly what you want
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ANSWERS  -->
+      <div class="assess-1 answers">
+        <p>
+          <input type="checkbox" class="checkbox" id="15" /> For
+          education/training
+        </p>
+        <p>
+          <input type="checkbox" class="checkbox" id="20" /> For office
+          construction/setup
+        </p>
+        <p>
+          <input type="checkbox" class="checkbox" id="10" /> For personal
+          reasons.
+        </p>
+        <p><input type="checkbox" class="checkbox" id="10" /> For Mortgage.</p>
+        <p><input type="checkbox" class="checkbox" id="10" /> Others.</p>
+
+        <button class="btn btn-secondary previous" disabled>
+          Previous <i class="fa fa-angle-left"></i>
+        </button>
+        <button class="btn btn-info next" id="assess-1">
+          Next <i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+
+      <div class="assess-2 answers">
+        <p><input type="checkbox" class="checkbox" id="15" /> High</p>
+        <p><input type="checkbox" class="checkbox" id="10" /> Moderate</p>
+        <p><input type="checkbox" class="checkbox" id="5" /> Low</p>
+        <p>
+          <input type="checkbox" class="checkbox" id="0" /> None of the above
+        </p>
+
+        <button class="btn btn-secondary previous" id="assess-2">
+          Previous <i class="fa fa-angle-left"></i>
+        </button>
+        <button class="btn btn-info next" id="assess-2">
+          Next <i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+
+      <div class="assess-3 answers">
+        <p>
+          <input type="checkbox" class="checkbox" id="5" /> N10000 - N100000
+        </p>
+        <p>
+          <input type="checkbox" class="checkbox" id="10" /> N200000 - N500000
+        </p>
+        <p>
+          <input type="checkbox" class="checkbox" id="15" /> N1000000 - N2000000
+        </p>
+        <p><input type="checkbox" class="checkbox" id="5" /> Below listed</p>
+        <p><input type="checkbox" class="checkbox" id="20" /> Above listed</p>
+
+        <button class="btn btn-secondary previous" id="assess-3">
+          Previous <i class="fa fa-angle-left"></i>
+        </button>
+        <button class="btn btn-info next" id="assess-3">
+          Next <i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+
+      <div class="assess-4 answers">
+        <p><input type="checkbox" class="checkbox yes_collatoral" id="15" /> Yes</p>
+        <p><input type="checkbox" class="checkbox" id="0" /> No</p>
+        <p><input type="checkbox" class="checkbox" id="10" /> Maybe</p>
+        <p>
+          <input type="checkbox" class="checkbox" id="0" /> None of the above
+        </p>
+
+        <div class="p-3">
+            <button class="btn btn-success file_upload files">Upload Collateral <i class="fa fa-file"></i></button>
+            <input class="files" id="inpFile" type="file" accept="application/pdf, application/msword, .docx, doc, .pdf"/>
+        </div>
+
+        <button class="btn btn-secondary previous" id="assess-4">
+          Previous <i class="fa fa-angle-left"></i>
+        </button>
+        <button class="btn btn-info next" id="assess-4">
+          Next <i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+
+      <div class="assess-5 answers">
+        <div class="main-section">
+          <p>
+            <input type="checkbox" class="checkbox" id="5" /> National ID Card
+          </p>
+          <p><input type="checkbox" class="checkbox" id="5" /> Voter's Card</p>
+          <p>
+            <input type="checkbox" class="checkbox" id="5" /> Birth Certificate
+          </p>
+          <p><input type="checkbox" class="checkbox" id="5" /> Medicare Card</p>
+          <p>
+            <input type="checkbox" class="checkbox" id="0" /> None of the above
+          </p>
+
+          <div class="p-3">
+            <button class="btn btn-success file_upload files">Upload Documents <i class="fa fa-file"></i></button>
+            <input class="files" id="inpFile" multiple type="file" accept="application/pdf, application/msword, .docx, doc, .pdf"/>
+          </div>
+
+          <button class="btn btn-secondary previous" id="assess-5">
+            Previous <i class="fa fa-angle-left"></i>
+          </button>
+          <button class="btn btn-info" id="submit">
+            Sumbit <i class="fa fa-check-circle-o"></i>
+          </button>
+        </div>
+
+        <!--  -->
+        <div class="text-center preloader mx-auto">
+          <img src="img/loading.gif" />
+          <h3 class="lead">...analysing assessments</h3>
+        </div>
+
+        <div class="success text-center mx-auto">
+          <img src="img/success.png" width="300" />
+          <h3 class="lead">
+            LOAN ACCESS GRANTED <i class="fa fa-check-circle"></i>
+          </h3>
+        </div>
+
+        <div class="failure text-center mx-auto">
+          <img src="img/failure.png" />
+          <h3 class="lead">LOAN ACCESS DENIED <i class="fa fa-remove"></i></h3>
+        </div>
+        <!--  -->
+      </div>
+
+      <!-- LOAN APPLICATION -->
+      <div class="loan_application">
+        <div class="application-board">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/user.jpg" width="200" />
+            </div>
+
+            <div class="col-md-9 mt-5 text-center">
+              <h1>
+                Loan Application
+                <i
+                  class="fa fa-check-circle fa-2x"
+                  style="color: rgb(7, 167, 7)"
+                ></i>
+              </h1>
+              <p class="lead">
+                FIll form accurately specifing exactly the necessaries needed.
+                This will be scrutinized and feedback will be made
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- loan application -->
+        <div class="form-column">
+          <form id="apply-form" method="post">
+            <input type="hidden" name="id" id="random_number" />
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                required
+                autofocus=""
+                placeholder="Full Name"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="phone"
+                class="form-control"
+                required
+                placeholder="Phone Number"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="occupation"
+                class="form-control"
+                required
+                placeholder="Occupation"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="number"
+                name="amount"
+                class="form-control"
+                required
+                placeholder="Loan Amount"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="duration"
+                class="form-control"
+                required
+                placeholder="Loan Duration"
+              />
+            </div>
+
+            <input type="hidden" name="status" value="Unapproved" />
+
+            <button class="btn btn-secondary cancel">
+              Cancel <i class="fa fa-remove"></i>
+            </button>
+            <button class="btn btn-success" type="submit">
+              Submit <i class="fa fa-check-circle"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </body>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/script.js"></script>
+</html>

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#body {
+  background-image: url(../img/back.jpg);
+  /* min-height: 100vh; */
+}
+
+.intro-div {
+  min-height: 20%;
+  background-color: rgba(136, 136, 136, 0.35);
+  margin-top: 40vh;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.header-text {
+  color: green;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.preloader {
+  display: none;
+}
+
+#assessment-body {
+  /* padding: 20px; */
+  background-color: rgba(136, 136, 136, 0.549);
+}
+
+.question-board {
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.answers {
+  /* min-height: 300px; */
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.assess-4,
+.assess-2,
+.assess-3,
+.assess-5 {
+  display: none;
+}
+
+.success,
+.failure {
+  display: none;
+}
+
+.jumbotron {
+  min-height: 300px;
+  background-color: rgba(136, 136, 136, 0.549);
+}
+
+.loan_application {
+  display: none;
+}
+
+.application-board {
+  min-height: 200px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.next,
+.previous,
+#submit {
+  cursor: pointer;
+}
+
+.form-column {
+  min-height: 300px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.loan_data {
+  display: none;
+  min-height: 300px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 90%;
+  margin: 20px auto;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+#loan_body {
+  background-color: rgba(136, 136, 136, 0.371);
+}
+
+.login_div {
+  min-height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  margin-top: 10%;
+}
+
+.app_status,
+.del_record {
+  font-weight: bold;
+}
+
+
+.files{
+    display: none;
+}
