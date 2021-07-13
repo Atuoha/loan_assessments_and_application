@@ -123,6 +123,14 @@
 }
 
 
-.files{
+.files, .credentials_file_btn, .credentials_inpFile{
     display: none;
+}
+
+#col_icon{
+  display: none;
+}
+
+#cred_icon{
+  display: none;
 }

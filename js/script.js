@@ -150,6 +150,9 @@ $(document).ready(function () {
       loanList = JSON.parse(localStorage.getItem("loans"));
     }
 
+    $('#credentials_inpFile').val();
+    $('#inpFile').val();
+
     loanList.push(data);
     localStorage.setItem("loans", JSON.stringify(loanList));
 
@@ -348,6 +351,16 @@ $(document).ready(function () {
 
   $('.file_upload').click(function(){
     $('#inpFile').click()
+
+    setInterval(()=>{
+      if( $('#inpFile').val() === ''){
+        $('#col_icon').css('display', 'none')
+      }else{
+        $('#col_icon').css('display', 'block')
+        $('.file_upload').css('display', 'none')
+        $('#collatorial_input').val($('#inpFile').val())
+      }
+    },500)
   })
 
   $('.yes_collatoral').click(function(){
@@ -357,4 +370,97 @@ $(document).ready(function () {
         $('.file_upload').css('display', 'none')
       }
   })
+
+
+
+ $('.credentials_upload').click(function(){
+  if(this.checked){
+    $('.credentials_file_btn').css('display', 'block')
+    }else{
+      $('.credentials_file_btn').css('display', 'none')
+    }
+ })
+
+
+  $('.credentials_file_btn').click(function(){
+    $('#credentials_inpFile').click();
+
+    setInterval(()=>{
+      if( $('#credentials_inpFile').val() === ''){
+        $('#cred_icon').css('display', 'none')
+      }else{
+        $('#cred_icon').css('display', 'block')
+        $('.credentials_file_btn').css('display', 'none')
+        $('#credentials_input').val($('#credentials_inpFile').val())
+      }
+    },500)
+
+
+  });
+
+
+
+  $('.checkbox1').click(function(){
+    if(this.checked){
+      $('.checkbox1').not(this).each(function(){
+        $(this.checked = false);
+      })
+    }
+  })
+
+  $('.checkbox2').click(function(){
+    if(this.checked){
+      $('.checkbox2').not(this).each(function(){
+        $(this.checked = false);
+      })
+    }
+  })
+
+
+  $('.checkbox3').click(function(){
+    if(this.checked){
+      $('.checkbox3').not(this).each(function(){
+        $(this.checked = false);
+      })
+    }
+  })
+
+
+  $('.checkbox4').click(function(){
+    if(this.checked){
+      $('.checkbox4').not(this).each(function(){
+        $(this.checked = false);
+        // $('.file_upload').css('display', 'none')
+      })
+    }
+  })
+
+
+  $('.checkboxnone').click(function(){
+    if(this.checked){
+      $('.credentials_upload').not(this).each(function(){
+        $(this.checked = false);
+        $('.credentials_file_btn').css('display', 'none')
+      })
+    }
+  })
+
+
+  $('.credentials_upload').click(function(){
+    if(this.checked){
+      $('.checkboxnone').checked = false;
+    }
+  })
+
+
+
+  $('.checkboxNo').click(function(){
+    if(this.checked){
+      $('.file_upload').css('display', 'none')
+    }
+  })
+
+
+
+  
 });
