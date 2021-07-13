@@ -448,7 +448,9 @@ $(document).ready(function () {
 
   $('.credentials_upload').click(function(){
     if(this.checked){
-      $('.checkboxnone').checked = false;
+      $('.checkboxnone').not(this).each(function(){
+        $(this.checked = false);
+      })
     }
   })
 
