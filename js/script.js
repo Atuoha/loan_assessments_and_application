@@ -99,7 +99,7 @@ $(document).ready(function () {
     setTimeout(() => {
       if (loan_score < 50) {
         swal({
-          title: "Loan Denied",
+          title: "Failed Primary Assessment",
           text: `Opps! You scored ${loan_score}, loan application is denied`, // Swal modal API
           icon: "error",
           timer: 5000,
@@ -114,8 +114,8 @@ $(document).ready(function () {
         $(".failure").css("display", "block");
       } else {
         swal({
-          title: "Loan Approved",
-          text: `Kudos! You scored ${loan_score}, loan application is approved`, // Swal modal API
+          title: "Passed Primary Assessment",
+          text: `Kudos! You scored ${loan_score}, fill form below to get started`, // Swal modal API
           icon: "success",
           timer: 5000,
           closeOnClickOutside: false,
