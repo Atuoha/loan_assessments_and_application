@@ -115,7 +115,7 @@ $(document).ready(function () {
       } else {
         swal({
           title: "Passed Primary Assessment",
-          text: `Kudos! You scored ${loan_score}, fill form below to get started`, // Swal modal API
+          text: `Kudos! You scored ${loan_score}, fill application form to get started`, // Swal modal API
           icon: "success",
           timer: 5000,
           closeOnClickOutside: false,
