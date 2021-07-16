@@ -153,6 +153,8 @@ $(document).ready(function () {
     $('#credentials_inpFile').val();
     $('#inpFile').val();
 
+    
+
     loanList.push(data);
     localStorage.setItem("loans", JSON.stringify(loanList));
 
@@ -219,6 +221,7 @@ $(document).ready(function () {
         const tdID = document.createElement("td");
         const tdName = document.createElement("td");
         const tdPhone = document.createElement("td");
+        const tdEmail = document.createElement("td");
         const tdOccupation = document.createElement("td");
         const tdAmount = document.createElement("td");
         const tdDuration = document.createElement("td");
@@ -240,10 +243,11 @@ $(document).ready(function () {
         tdID.innerHTML = loan[0].value;
         tdName.innerHTML = loan[1].value;
         tdPhone.innerHTML = loan[2].value;
-        tdOccupation.innerHTML = loan[3].value;
-        tdAmount.innerHTML = `N${loan[4].value}`;
-        tdDuration.innerHTML = loan[5].value;
-        tdStatus.innerHTML = loan[6].value;
+        tdEmail.innerHTML = loan[3].value;
+        tdOccupation.innerHTML = loan[4].value;
+        tdAmount.innerHTML = `N${loan[5].value}`;
+        tdDuration.innerHTML = loan[6].value;
+        tdStatus.innerHTML = loan[7].value;
 
         if (loan[6].value == "Unapproved") {
           tdEdit.innerHTML = `<a href="javascript:void(0)" rel="Approve" style="color: green;  text-decoration: none;" id=${loan[0].value} class="app_status">Approve</a>`;
@@ -255,6 +259,7 @@ $(document).ready(function () {
         tr.appendChild(tdID);
         tr.appendChild(tdName);
         tr.appendChild(tdPhone);
+        tr.appendChild(tdEmail);
         tr.appendChild(tdOccupation);
         tr.appendChild(tdAmount);
         tr.appendChild(tdDuration);
@@ -268,6 +273,9 @@ $(document).ready(function () {
   };
   fetch_loan();
 
+
+
+  
   // deleting record
   $(".del_record").click(function (e) {
     e.preventDefault();
@@ -394,7 +402,6 @@ $(document).ready(function () {
         $('#credentials_input').val($('#credentials_inpFile').val())
       }
     },500)
-
 
   });
 
